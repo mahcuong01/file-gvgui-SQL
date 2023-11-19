@@ -1,0 +1,11 @@
+-- Tạo bảng sinhvien trong database quanlysinhvien
+CREATE TABLE sinhvien
+(
+	MaSV integer PRIMARY KEY AUTO_INCREMENT,-- khóa chính tự động tăng
+	TenSV varchar(255) NOT NULL, -- tensv có kiểu dữ liệu là varchar chứa tối đa 255 ký tự
+	NgaySinh DATE, -- NgaySinh có kiểu dữ liệu là date định dạng kiểu (yyyy-mm-dd)
+	SDT varchar(10) -- SDT có kiểu dữ liệu là varchar chứa tối đa 10 ký tự
+)
+
+-- Lệnh thêm dữ liệu vào table sinhvien với các field (TenSV, NgaySinh)
+INSERT INTO sinhvien(TenSV,NgaySinh) VALUES('Nguyễn Văn A','1990-12-12')
